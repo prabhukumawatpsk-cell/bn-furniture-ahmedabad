@@ -271,12 +271,17 @@ section{
 .service-card p{
     color:#ccc;
 }
-/* ===== PREMIUM GALLERY SLIDER ===== */
+/* ===== RESPONSIVE GALLERY SLIDER ===== */
 
 #gallerySlider{
+    width:100%;
+    overflow:hidden;
+    position:relative;
+}
+
+.slider-wrapper{
     position:relative;
     overflow:hidden;
-    width:100%;
 }
 
 .slider-track{
@@ -286,8 +291,7 @@ section{
 }
 
 .slide{
-    min-width:320px;
-    flex-shrink:0;
+    flex:0 0 calc(33.333% - 14px);
 }
 
 .slide img{
@@ -296,26 +300,20 @@ section{
     object-fit:cover;
     border-radius:16px;
     border:2px solid #FFC107;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.slide img:hover{
-    transform:scale(1.03);
+    display:block;
 }
 
 .slider-btn{
     position:absolute;
     top:50%;
     transform:translateY(-50%);
-    width:45px;
-    height:45px;
+    width:48px;
+    height:48px;
     border:none;
     border-radius:50%;
     background:#FFC107;
     color:#000;
-    font-size:20px;
-    font-weight:bold;
+    font-size:22px;
     cursor:pointer;
     z-index:10;
 }
@@ -328,18 +326,22 @@ section{
     right:10px;
 }
 
-@media(max-width:768px){
+@media (max-width:768px){
 
-.slide{
-    min-width:90%;
+    .slide{
+        flex:0 0 100%;
+    }
+
+    .slide img{
+        height:320px;
+    }
+
+    .slider-btn{
+        width:42px;
+        height:42px;
+        font-size:20px;
+    }
 }
-
-.slide img{
-    height:320px;
-}
-
-}
-
 
 /* ===== WHY CHOOSE US ===== */
 
