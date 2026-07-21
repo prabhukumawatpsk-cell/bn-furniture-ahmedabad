@@ -4,7 +4,7 @@ const images = [
 "images/IMG20260623170230.jpg",
 "images/IMG20260623180427.jpg",
 "images/IMG20260625112622.jpg",
-"images/IMG20260627125949.jpg"
+"images/IMG20260627125949.jpg",
   "images/IMG20260627131640.jpg",
 "images/IMG20260628104551.jpg",
 "images/IMG20260628105006.jpg",
@@ -14,7 +14,7 @@ const images = [
 "images/IMG20260628155742.jpg",
 "images/IMG20260628155757.jpg",
 "images/IMG_20260628_161211.jpg",
-"images/IMG_20260703_162645.jpg"
+"images/IMG_20260703_162645.jpg",
 ];
 
 const gallery = document.getElementById("gallerySlider");
