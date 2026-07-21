@@ -97,3 +97,35 @@ setInterval(() => {
     showSlide();
 
 }, 3000);
+
+// Gallery Image Preview
+
+document.querySelectorAll(".slide img").forEach(img => {
+
+    img.addEventListener("click", () => {
+
+        const preview = document.createElement("div");
+
+        preview.style.position = "fixed";
+        preview.style.top = "0";
+        preview.style.left = "0";
+        preview.style.width = "100%";
+        preview.style.height = "100%";
+        preview.style.background = "rgba(0,0,0,.9)";
+        preview.style.display = "flex";
+        preview.style.alignItems = "center";
+        preview.style.justifyContent = "center";
+        preview.style.zIndex = "99999";
+
+        preview.innerHTML = `
+            <img src="${img.src}"
+            style="max-width:95%;max-height:95%;border-radius:15px;">
+        `;
+
+        preview.onclick = () => preview.remove();
+
+        document.body.appendChild(preview);
+
+    });
+
+});
