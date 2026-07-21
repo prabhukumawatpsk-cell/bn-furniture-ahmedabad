@@ -1,0 +1,186 @@
+/* =====================================
+   BN Furniture Ahmedabad
+   style.css - Part 1
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+:root{
+    --black:#0d0d0d;
+    --dark:#1a1a1a;
+    --yellow:#FFC107;
+    --white:#ffffff;
+    --gray:#dcdcdc;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--black);
+    color:var(--white);
+    line-height:1.7;
+}
+
+.container{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+section{
+    padding:90px 0;
+}
+
+/* ===== HEADER ===== */
+
+.header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:999;
+    background:rgba(0,0,0,.95);
+    border-bottom:1px solid rgba(255,193,7,.2);
+    backdrop-filter:blur(8px);
+}
+
+.header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:80px;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+    color:#fff;
+}
+
+.logo span{
+    color:var(--yellow);
+}
+
+.navbar ul{
+    display:flex;
+    gap:28px;
+    list-style:none;
+}
+
+.navbar a{
+    color:#fff;
+    transition:.3s;
+    font-weight:500;
+}
+
+.navbar a:hover{
+    color:var(--yellow);
+}
+
+.header-buttons{
+    display:flex;
+    gap:12px;
+}
+
+.call-btn,
+.whatsapp-btn{
+    padding:12px 22px;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.call-btn{
+    background:var(--yellow);
+    color:#000;
+}
+
+.call-btn:hover{
+    transform:translateY(-3px);
+}
+
+.whatsapp-btn{
+    border:2px solid var(--yellow);
+    color:var(--yellow);
+}
+
+.whatsapp-btn:hover{
+    background:var(--yellow);
+    color:#000;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+    padding-top:160px;
+    padding-bottom:120px;
+    background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+    url("images/hero.jpg") center/cover no-repeat;
+}
+
+.hero-content{
+    max-width:760px;
+}
+
+.hero h1{
+    font-size:60px;
+    line-height:1.15;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:var(--yellow);
+}
+
+.hero p{
+    color:#ddd;
+    font-size:20px;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.primary-btn,
+.secondary-btn{
+    padding:16px 32px;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.primary-btn{
+    background:var(--yellow);
+    color:#000;
+}
+
+.primary-btn:hover{
+    transform:translateY(-4px);
+}
+
+.secondary-btn{
+    border:2px solid var(--yellow);
+    color:var(--yellow);
+}
+
+.secondary-btn:hover{
+    background:var(--yellow);
+    color:#000;
+}
