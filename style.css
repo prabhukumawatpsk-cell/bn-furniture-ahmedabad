@@ -163,6 +163,7 @@ section{
     display:flex;
     gap:18px;
     flex-wrap:wrap;
+    justify-content:center;
 }
 
 .main-btn,
