@@ -136,11 +136,9 @@ section{
 }
 
 .hero-content{
-    max-width: 900px;
-    text-align: center;
-}
-.hero-content{
     max-width:760px;
+    text-align:center;
+    margin:auto;
 }
 
 .hero h1{
