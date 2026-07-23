@@ -130,7 +130,15 @@ section{
     padding-bottom:120px;
     background:linear-gradient(135deg,#111,#222);
 }
+.hero-grid{
+    display: flex;
+    justify-content: center;
+}
 
+.hero-content{
+    max-width: 900px;
+    text-align: center;
+}
 .hero-content{
     max-width:760px;
 }
