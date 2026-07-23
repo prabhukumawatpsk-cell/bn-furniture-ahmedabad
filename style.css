@@ -165,32 +165,34 @@ section{
     flex-wrap:wrap;
 }
 
-.primary-btn,
-.secondary-btn{
+.main-btn,
+.outline-btn{
+    display:inline-block;
     padding:16px 32px;
     border-radius:8px;
     font-weight:600;
     transition:.3s;
 }
 
-.primary-btn{
+.main-btn{
     background:var(--yellow);
     color:#000;
 }
 
-.primary-btn:hover{
+.main-btn:hover{
     transform:translateY(-4px);
 }
 
-.secondary-btn{
+.outline-btn{
     border:2px solid var(--yellow);
     color:var(--yellow);
 }
 
-.secondary-btn:hover{
+.outline-btn:hover{
     background:var(--yellow);
     color:#000;
 }
+
 /* ===== SECTION TITLES ===== */
 
 .section-title{
@@ -567,8 +569,8 @@ section{
     font-size:17px;
 }
 
-.primary-btn,
-.secondary-btn,
+.main-btn,
+.outline-btn,
 .call-btn,
 .whatsapp-btn{
     width:100%;
