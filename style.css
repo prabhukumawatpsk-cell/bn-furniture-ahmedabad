@@ -422,9 +422,14 @@ section{
 /* ===== CONTACT ===== */
 
 .contact-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
+    display:flex;
+    justify-content:center;
+}
+
+.contact-details{
+    max-width:700px;
+    width:100%;
+    text-align:center;
 }
 
 .contact-details p{
